@@ -9,6 +9,8 @@ import {
   CardTitle,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import CommentForm from "./CommentFormComponent";
+
 // class DishDetail extends Component {
 //   constructor(props) {
 //     super(props);
@@ -104,6 +106,7 @@ const DishDetail = (props) => {
           <div className="col-12 col-md-5 m-1">
             <h4>Comments</h4>
             <RenderComments comments={props.comments} />
+            <CommentForm />
           </div>
         </div>
       </div>
